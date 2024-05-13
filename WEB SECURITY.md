@@ -17,7 +17,7 @@ comment:  in questa presentazione parleremo della sicurezza in rete
 
 La web security si riferisce alla pratica di garantire che i vari siti e applicazioni siano protetti da varie minacce e vulnerabilità. Con il crescente affidamento che si fa su Internet per la comunicazione, il commercio e l'intrattenimento, la sicurezza quando si naviga nel web è diventata una preoccupazione critica sia per le aziende che per gli individui. In questa presentazione osserveremo alcuni degli aspetti chiave della sicurezza in rete.
 
-Lavoro di ...
+Lavoro di Tommaso Ausili, Leonardo Belli, Andrea Pomarico e Nicola Presta
 
 Visualizza su [LiaScript](https://liascript.github.io/course/?)
 
@@ -63,7 +63,7 @@ Quale opzione è un esempio di autenticazione biometrica?
 - [( )] Token software
 
 
-# 2.AUTORIZZAZIONE
+## 2.AUTORIZZAZIONE
 
 L'autorizzazione è il processo mediante il quale si verifica se un utente, un programma o un dispositivo ha il permesso di eseguire una determinata azione o di accedere a specifiche risorse. Mentre l'autenticazione si assicura che l'identità dell'utente sia verificata, l'autorizzazione determina cosa quell'utente può fare o vedere una volta all'interno del sistema. Il processo di autorizzazione si attiva tipicamente dopo che un utente è stato autenticato con successo. Esso verifica i privilegi dell'utente confrontandoli con una serie di politiche o regole di sicurezza che definiscono chi può fare cosa. Ad esempio, un sistema di gestione dei database può consentire a certi utenti di leggere documenti ma non di modificarli, mentre altri potrebbero avere il permesso di eseguire entrambe le azioni. Ci sono diversi metodi e modelli utilizzati per implementare l'autorizzazione nei sistemi informatici, tra cui:
 1. Controllo degli Accessi Basato sui Ruoli, RBAC: Gli accessi sono assegnati in base ai ruoli all'interno dell'organizzazione e ogni ruolo ha permessi specifici
@@ -103,7 +103,7 @@ Perché è importante avere un buon sistema di autorizzazione in un'organizzazio
 - [( )] Per aumentare la capacità di storage del sistema
 - [( )] Per ridurre i costi di gestione della rete
 
-# 3.CRITTOGRAFIA DEI DATI
+## 3.CRITTOGRAFIA DEI DATI
 
 La crittografia dei dati è una delle colonne portanti della sicurezza informatica. Si tratta di una tecnica matematica usata per proteggere le informazioni, trasformando i dati originali, noti come "dati in chiaro", in una forma illeggibile, chiamata "cifrato", a chiunque non possieda le chiavi di decifrazione appropriate. Questo processo è cruciale per proteggere la privacy, la confidenzialità e l'integrità dei dati mentre sono memorizzati o trasmessi attraverso reti potenzialmente insicure. Esistono principalmente due tipi di crittografia usati nella sicurezza informatica:
 1. Crittografia simmetrica: utilizza la stessa chiave per cifrare e decifrare i dati. È più veloce e più efficiente dal punto di vista computazionale rispetto alla crittografia asimmetrica. Il principale svantaggio è la gestione delle chiavi, in quanto la stessa chiave deve essere tenuta segreta e condivisa tra mittente e destinatario. Esempi di algoritmi di crittografia simmetrica includono AES, Advanced Encryption Standard, e DES, Data Encryption Standard
@@ -146,7 +146,7 @@ Qual è il principale vantaggio della crittografia dei dati?
 - [( )] Semplifica la gestione dei dati
 
 
-#VALIDAZIONE DELL'INPUT
+## 4.VALIDAZIONE DELL'INPUT
 
 La validazione dell'input è un concetto fondamentale nella sicurezza informatica,mira a garantire che i dati inseriti da un utente o ricevuti da un altro sistema rispettino specifici criteri prima di essere elaborati da un'applicazione. Questo processo è cruciale per prevenire una vasta gamma di vulnerabilità e attacchi, come l'iniezione SQL, cross-site scripting XSS, e molti altri problemi di sicurezza che possono emergere quando i dati in ingresso non sono adeguatamente controllati. La validazione dell'input è essenziale per:
 1. Prevenire attacchi: Molte vulnerabilità di sicurezza nascono quando un'applicazione assume che l'input ricevuto sia sicuro e ben formato senza verificarlo adeguatamente. Gli attaccanti possono sfruttare questa debolezza per inserire input malevoli che possono portare a esecuzione di codice non autorizzato, perdita di dati, e altre attività dannose
@@ -194,7 +194,7 @@ Perché è importante eseguire la validazione dell'input sia lato client che lat
 - [( )] La validazione lato server aumenta la velocità del sito web.
 
 
-#5.INTESTAZIONI DI SICUREZZA
+## 5.INTESTAZIONI DI SICUREZZA
 
 Le intestazioni di sicurezza HTTP sono un componente cruciale nella protezione delle applicazioni web. Queste intestazioni sono usate per comunicare al browser come deve comportarsi quando gestisce il contenuto di una pagina, potendo così prevenire e mitigare vari tipi di attacchi informatici come il cross-site scripting XSS, il clickjacking e altri tipi di exploit, ovvero tipi di programmi specializzati. Aggiungendo specifiche direttive di sicurezza attraverso queste intestazioni, gli sviluppatori possono rafforzare le difese di un'applicazione web. Queste sono alcune delle intestazioni di sicurezza HTTP più comuni e la loro funzione:
 1. _Content-Security-Policy_: Questa intestazione aiuta a prevenire attacchi XSS e di iniezione di dati consentendo ai webmaster di definire da quali fonti il browser dovrebbe accettare contenuti. Può specificare, ad esempio, da quali URL è possibile caricare script, immagini, stili CSS, ecc.
@@ -237,13 +237,43 @@ Qual era lo scopo dell'intestazione X-XSS-Protection?
 - [(X)] Prevenire gli attacchi di tipo cross-site scripting XSS
 
 
-#AGGIORNAMENTI E PATCH REGOLARI
-Gli aggiornamenti e le patch regolari sono componenti essenziali per la protezione delle reti, dei sistemi e dei dati contro le minacce e le vulnerabilità emergenti. Una patch è una modifica software progettata per aggiornare, correggere o migliorare un programma informatico. Questo include la correzione di vulnerabilità di sicurezza che possono essere sfruttate da attaccanti per infiltrarsi nei sistemi informatici. Ci sono varie tipologie di aggiornamenti che ci permettono di correggere bug nel nostro sistema:
-1. Patch di sicurezza, rilasciate urgentemente per correggere vulnerabilità specifiche che possono essere sfruttate da malware o hacker.
-2. Aggiornamenti minori, che spesso contengono correzioni di sicurezza non indispensabili, ma anche miglioramenti alla stabilità e alla funzionalità del software.
-3. Aggiornamenti maggiori, che ossono includere cambiamenti significativi al software, introducendo nuove funzionalità, interfacce utente rinnovate e importanti miglioramenti alla sicurezza.
+## 6.AGGIORNAMENTI E PATCH REGOLARI
 
-Le vulnerabilità nei software possono essere sfruttate dagli hacker per eseguire codice arbitrario, rubare dati o causare un'interruzione del servizio. Patchare questi problemi riduce il rischio di attacchi. Molti tipi di malware sfruttano specifiche vulnerabilità nei sistemi operativi o nelle applicazioni. Installare regolarmente patch e aggiornamenti aiuta a prevenire infezioni da malware che sfruttano vecchie vulnerabilità. Gli aggiornamenti spesso non solo correggono vulnerabilità, ma migliorano anche la stabilità e le prestazioni del software, offrendo agli utenti una migliore esperienza complessiva.
+Gli aggiornamenti e le patch regolari sono una parte fondamentale della sicurezza informatica. Possono essere suddivisi in due categorie principali: aggiornamenti del sistema operativo e delle applicazioni, e aggiornamenti dei dispositivi di rete.
+1. Aggiornamenti del sistema operativo e delle applicazioni: Sia i sistemi operativi che le applicazioni vengono costantemente aggiornati per correggere falle di sicurezza, bug e vulnerabilità scoperte. Le aziende di software rilasciano regolarmente patch per indirizzare queste vulnerabilità, quindi è essenziale tenere aggiornati sia il sistema operativo che le applicazioni installate. I sistemi operativi moderni offrono spesso opzioni per l'aggiornamento automatico, semplificando il processo.
+2. Aggiornamenti dei dispositivi di rete: Questi aggiornamenti riguardano dispositivi come router, switch e firewall. Anche loro possono avere vulnerabilità che richiedono patch. Mantenere aggiornato il firmware di questi dispositivi è essenziale per garantire la sicurezza della rete.
 
-Il processo di gestione delle patch è vitale per assicurare che gli aggiornamenti vengano applicati in modo efficiente e tempestivo. Questo processo include:
+I cyber criminali spesso sfruttano le vulnerabilità dei software per compromettere sistemi e reti. Le patch correggono queste vulnerabilità, rendendo più difficile per gli hacker sfruttarle.Oltre a correggere le vulnerabilità esistenti, le patch possono introdurre nuove funzionalità di sicurezza o migliorare le procedure di autenticazione, rendendo il sistema più resistente agli attacchi. Molte normative sulla sicurezza, come il GDPR in Europa o il CCPA in California, richiedono alle aziende di mantenere i propri sistemi aggiornati come parte dei requisiti di conformità. Gli aggiornamenti regolari riducono il rischio di violazioni dei dati, proteggendo le informazioni sensibili degli utenti e dei clienti. Tenere aggiornati i sistemi dimostra impegno per la sicurezza da parte dell'azienda, aumentando la fiducia degli utenti e dei clienti.
+
+In sostanza, gli aggiornamenti e le patch regolari sono un elemento fondamentale di una strategia di sicurezza informatica efficace, e tutte le organizzazioni dovrebbero adottare pratiche per mantenerli costantemente aggiornati.
+
+Perché gli aggiornamenti e le patch regolari sono importanti nella sicurezza informatica?
+- [( )] Migliorano le prestazioni del sistema
+- [( )] Aggiungono nuove funzionalità
+- [(X)] Chiudono le vulnerabilità e i bug di sicurezza
+- [( )] Aumentano il costo dei software
+
+Cosa sono i dispositivi di rete che richiedono aggiornamenti regolari?
+- [( )] Mouse e tastiere
+- [(X)] Router, switch e firewall
+- [( )] Stampanti e scanner
+- [( )] Altoparlanti e microfoni
+
+Qual è uno dei motivi principali per cui gli hacker sfruttano le vulnerabilità del software?
+- [(X)] Per compromettere sistemi e reti
+- [( )] Per rendere i sistemi più efficienti
+- [( )] Per migliorare la sicurezza
+- [( )] Perdonare debiti tecnici
+
+Perché le aziende possono essere tenute a mantenere i propri sistemi aggiornati secondo alcune normative sulla sicurezza?
+- [( )] Per rendere più difficile l'uso dei sistemi
+- [( )] Per aumentare i costi operativi
+- [( )] Per sfidare gli hacker
+- [(X)] Per garantire la conformità normativa
+
+Qual è uno dei benefici di tenere aggiornati i sistemi secondo il testo?
+- [( )] Riduzione della produttività
+- [( )] Aumento delle vulnerabilità
+- [(X)] Aumento della fiducia degli utenti
+- [( )] Nessun impatto sulla sicurezza
 
