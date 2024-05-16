@@ -19,7 +19,7 @@ La web security si riferisce alla pratica di garantire che i vari siti e applica
 
 Lavoro di Tommaso Ausili, Leonardo Belli, Andrea Pomarico e Nicola Presta
 
-Visualizza su [LiaScript](https://liascript.github.io/course/?/https://liascript.github.io/LiveEditor/?/edit/nUjfA0wyhmi6UVbIs76yNo0C)
+Visualizza su [LiaScript](https://liascript.github.io/course/?)
 
 ## 1.AUTENTICAZIONE
 
